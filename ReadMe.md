@@ -2,7 +2,7 @@
 
 Create, shorten, and share anything!
 
-![tynio](https://cloud.githubusercontent.com/assets/3048/23493204/dc0c58d6-ff6e-11e6-9f40-d8ad7eb07f83.png)
+![tyn.io](https://cloud.githubusercontent.com/assets/3048/23493286/7635ae6c-ff6f-11e6-8957-c8791e6ceec6.png)
 
 ## Author ##
 
