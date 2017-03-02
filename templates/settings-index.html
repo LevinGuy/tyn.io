@@ -1,0 +1,78 @@
+{{ template "header.html" . }}
+
+  <div class="tynio-content">
+
+    <!-- section -->
+    <section class="tynio-section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__supporting-text">
+
+          <h4>Settings</h4>
+
+          <h5>Profile</h5>
+
+          <form method="POST" action="/settings/profile">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 100%;">
+              <input class="mdl-textfield__input" type="text" name="userName" id="userName" value={{ .User.Name }} pattern="[A-Z,a-z,0-9][A-Z,a-z,0-9,-]+[A-Z,a-z,0-9]">
+              <label class="mdl-textfield__label" for="userName">UserName</label>
+              <span class="mdl-textfield__error">Min 3 letters. Letters, numbers, and dashes only. Must start and end with a letter or number (not a dash).</span>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 100%;">
+              <input class="mdl-textfield__input" type="text" name="title" id="title" value={{ .User.Title }}>
+              <label class="mdl-textfield__label" for="title">Name</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 100%;">
+              <input class="mdl-textfield__input" type="email" name="email" id="email" value={{ .User.Email }}>
+              <label class="mdl-textfield__label" for="email">Email</label>
+            </div>
+            <div>
+              <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Save Profile" />
+            </div>
+          </form>
+
+          <h5>Connected Accounts</h5>
+
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%;">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Provider / ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Username</th>
+                <th class="mdl-data-table__cell--non-numeric">Title</th>
+                <th class="mdl-data-table__cell--non-numeric">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+            {{ range .Socials }}
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">{{ .Id }}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{ .NickName }}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{ .Title }}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{ with .Email }}&lt;{{ . }}&gt;{{ else }}<em>n/a</em>{{ end }}</td>
+              </tr>
+            {{ end }}
+            </tbody>
+          </table>
+
+          <h6>Connect New Social Account</h6>
+
+          <p>
+            You may connect multiple social accounts to this user account, including multiple accounts from the same
+            provider, for example, if you have multiple Twitter accounts.
+          </p>
+
+          <ul>
+            <li><a href="/auth/twitter">Connect a new Twitter Account</a></li>
+            <li><a href="/auth/github">Connect a new GitHub Account</a></li>
+            <li><a href="/auth/gplus">Connect a new Google Account</a></li>
+          </ul>
+
+          <p>(Ends)</p>
+
+        </div>
+      </div>
+    </section>
+    <!-- /section -->
+
+  </div>
+
+{{ template "footer.html" . }}

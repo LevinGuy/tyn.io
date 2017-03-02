@@ -1,0 +1,114 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/Machiel/slugify",
+			"repository": "https://github.com/Machiel/slugify",
+			"revision": "9c8f186ad6ea352ad2709ad0ec08f2ecc8a1b424",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/asaskevich/govalidator",
+			"repository": "https://github.com/asaskevich/govalidator",
+			"revision": "fdf19785fd3558d619ef81212f5edf1d6c2a5911",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/boltdb/bolt",
+			"repository": "https://github.com/boltdb/bolt",
+			"revision": "2e25e3bb4285d41d223bb80b12658a2c9b9bf3e3",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/chilts/logfn",
+			"repository": "https://github.com/chilts/logfn",
+			"revision": "3b1585fc2a2a607449045c9e637f40f0ef172c04",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/chilts/rod",
+			"repository": "https://github.com/chilts/rod",
+			"revision": "11cb9a5dc87fb04f4da7e1e23d60370f9d3eb794",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gomiddleware/logger",
+			"repository": "https://github.com/gomiddleware/logger",
+			"revision": "d5f3558dddfebb5e7e5e55448d0f6d5907ac1cc5",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gomiddleware/mux",
+			"repository": "https://github.com/gomiddleware/mux",
+			"revision": "7d367b3ca1531bb1f2fe00282a75652b9577fc00",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gomiddleware/slash",
+			"repository": "https://github.com/gomiddleware/slash",
+			"revision": "b26e7de9d38339fc28939e235a14315b7209f80a",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/context",
+			"repository": "https://github.com/gorilla/context",
+			"revision": "08b5f424b9271eedf6f9f0ce86cb9396ed337a42",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/mux",
+			"repository": "https://github.com/gorilla/mux",
+			"revision": "757bef944d0f21880861c2dd9c871ca543023cba",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/schema",
+			"repository": "https://github.com/gorilla/schema",
+			"revision": "5838d20c7b66130c49f99e6e2f0892229e95161e",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/securecookie",
+			"repository": "https://github.com/gorilla/securecookie",
+			"revision": "fa5329f913702981df43dcb2a380bac429c810b5",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/sessions",
+			"repository": "https://github.com/gorilla/sessions",
+			"revision": "83c8db3bdc9be789e57e3756ffbcffd2d7d40176",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/hashicorp/go-uuid",
+			"repository": "https://github.com/hashicorp/go-uuid",
+			"revision": "64130c7a86d732268a38cb04cfbaf0cc987fda98",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/markbates/goth",
+			"repository": "https://github.com/markbates/goth",
+			"revision": "a185bfa1e93d394cdc958b8f34206dd70121c7a6",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/mrjones/oauth",
+			"repository": "https://github.com/mrjones/oauth",
+			"revision": "f641ca13803b5c366bee1cdd836a0d5f165420e2",
+			"branch": "master"
+		},
+		{
+			"importpath": "golang.org/x/net/context",
+			"repository": "https://go.googlesource.com/net",
+			"revision": "45e771701b814666a7eb299e6c7a57d0b1799e91",
+			"branch": "master",
+			"path": "/context"
+		},
+		{
+			"importpath": "golang.org/x/oauth2",
+			"repository": "https://go.googlesource.com/oauth2",
+			"revision": "314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd",
+			"branch": "master"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{{ template "header.html" . }}
+
+  <div class="tynio-content">
+
+    <!-- section -->
+    <section class="tynio-section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__supporting-text">
+
+          <h4>Profile for {{ .Profile.Name }}</h4>
+
+          <ul>
+            <li>{{ .Profile.Name }}</li>
+            <li>{{ .Profile.Title }}</li>
+          </ul>
+
+          <p>(Ends)</p>
+
+        </div>
+      </div>
+    </section>
+    <!-- /section -->
+
+  </div>
+
+{{ template "footer.html" . }}

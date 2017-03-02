@@ -1,0 +1,21 @@
+[program:io-tyn]
+directory = /home/chilts/src/appsattic-tyn.io
+command = /home/chilts/src/appsattic-tyn.io/bin/tynio
+user = chilts
+autostart = true
+autorestart = true
+stdout_logfile = /var/log/chilts/io-tyn-stdout.log
+stderr_logfile = /var/log/chilts/io-tyn-stderr.log
+environment =
+    TYNIO_PORT="__TYNIO_PORT__",
+    TYNIO_BASE_URL="__TYNIO_BASE_URL__",
+    TYNIO_TWITTER_CONSUMER_KEY="__TYNIO_TWITTER_CONSUMER_KEY__",
+    TYNIO_TWITTER_CONSUMER_SECRET="__TYNIO_TWITTER_CONSUMER_SECRET__",
+    TYNIO_GPLUS_CLIENT_ID="__TYNIO_GPLUS_CLIENT_ID__",
+    TYNIO_GPLUS_CLIENT_SECRET="__TYNIO_GPLUS_CLIENT_SECRET__",
+    TYNIO_GITHUB_CLIENT_ID="__TYNIO_GITHUB_CLIENT_ID__",
+    TYNIO_GITHUB_CLIENT_SECRET="__TYNIO_GITHUB_CLIENT_SECRET__",
+    TYNIO_SESSION_AUTH_KEY_V2="__TYNIO_SESSION_AUTH_KEY_V2__",
+    TYNIO_SESSION_ENC_KEY_V2="__TYNIO_SESSION_ENC_KEY_V2__",
+    TYNIO_SESSION_AUTH_KEY_V1="__TYNIO_SESSION_AUTH_KEY_V1__",
+    TYNIO_SESSION_ENC_KEY_V1=__TYNIO_SESSION_ENC_KEY_V1__""

@@ -1,0 +1,62 @@
+{{ template "header.html" . }}
+
+  <div class="tynio-content">
+
+    <!-- Add multiple sections if you like -->
+    <!-- section -->
+    <section class="tynio-section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__supporting-text">
+          <h4>A Skeleton WebApp</h4>
+          <p>
+            tyn.io is a skeleton webapp which can be forked and used as the basis of your new site.
+          </p>
+          <p>
+            It uses the following technologies:
+          </p>
+          <ul>
+            <li>GoLang</li>
+            <li>Goth</li>
+            <li>BoltDB</li>
+            <li>GetMDL</li>
+          </ul>
+          <p>
+            Fork the repo, rename all the 'tynio' stuff to your own name, then you procede. See the repo on GitHub for
+            more details: <a href="https://github.com/appsattic/tyn.io">https://github.com/appsattic/tyn.io</a>.
+          </p>
+          <p>
+            Go and create apps in each of the social login providers you need, configure the appropriate ENV VARS
+            and then restart the server. You should be able to log in straight away.
+          </p>
+          <ul>
+            <li>TYNIO_BASE_URL=http://example.com</li>
+            <li>TYNIO_PORT=8080</li>
+            <li>TYNIO_TWITTER_CONSUMER_KEY=...</li>
+            <li>TYNIO_TWITTER_CONSUMER_SECRET=...</li>
+            <li>TYNIO_GPLUS_CLIENT_ID=...</li>
+            <li>TYNIO_GPLUS_CLIENT_SECRET=...</li>
+            <li>TYNIO_GITHUB_CLIENT_ID=...</li>
+            <li>TYNIO_GITHUB_CLIENT_SECRET=...</li>
+            <li>TYNIO_SESSION_AUTH_KEY_V2=...</li>
+            <li>TYNIO_SESSION_ENC_KEY_V2=...</li>
+            <li>TYNIO_SESSION_AUTH_KEY_V1=...</li>
+            <li>TYNIO_SESSION_ENC_KEY_V1=...</li>
+          </ul>
+          <p>
+            Once you are up and running, just start filling in the application itself. e.g. for an image upload
+            service, you just need the ability for users to upload images! :) Easy aye?
+          </p>
+          <p>
+            Andrew Chilton - <a href="https://chilts.org">Blog</a> - <a href="https://twitter.com/andychilton">Twitter</a>
+          </p>
+        </div>
+        <div class="mdl-card__actions">
+          <a href="https://github.com/AppsAttic/tyn.io" class="mdl-button mdl-js-button mdl-button--primary">GitHub</a>
+        </div>
+      </div>
+    </section>
+    <!-- /section -->
+
+  </div>
+
+{{ template "footer.html" . }}
